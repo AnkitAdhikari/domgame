@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  overflow-y: hidden;
+}
+.board {
+  background-color: #dadada;
+  width: 100vw;
+  height: 100vh;
+}
+
+.div {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.observerContainer {
+  height: 600px;
+}
+
+.overlay {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.664);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  font-size: 62px;
+  z-index: 9999;
+}
