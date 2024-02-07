@@ -40,7 +40,7 @@ function makedivs() {
     });
     let options = {
       root: null,
-      threshold: 1,
+      threshold: 0.9,
     };
     let observer = new IntersectionObserver(function (entries) {
       entries.forEach((entry) => {
@@ -63,9 +63,8 @@ function makedivs() {
 start();
 
 function randomColor() {
-  return `rgb(${Math.round(Math.random() * 255) + 1},${
-    Math.round(Math.random() * 255) + 1
-  },${Math.round(Math.random() * 255) + 1}`;
+  return `rgb(${Math.round(Math.random() * 255) + 1},${Math.round(Math.random() * 255) + 1
+    },${Math.round(Math.random() * 255) + 1}`;
 }
 
 function giveRandomNum(num) {
